@@ -22,7 +22,7 @@ let mapleader = "\<Space>"
 nnoremap <Leader>e :e 
 
 nnoremap <Tab> :bn<cr>
-
+nnoremap <S-Tab> :bp<cr>
 "Ctrl+s reach vim
 silent !stty -ixon > /dev/null 2> /dev/null
 
