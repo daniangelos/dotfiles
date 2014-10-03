@@ -1,2 +1,2 @@
 cp -Rf ./.vim ~/
-ln -s ./.vimrc ~/
+cp .vimrc ~/.vimrc
