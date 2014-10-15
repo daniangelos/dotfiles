@@ -4,12 +4,15 @@ set number
 set hidden
 set t_Co=256
 
-colorscheme darkblue
-
 execute pathogen#infect()
 
 map :Nt NERDTreeToggle<CR>
 nnoremap <C-N> :NERDTreeToggle<CR>
+
+set tabstop=4
+set shiftwidth=4
+
+colorscheme bubblegum
 
 nnoremap <C-S> :w<CR>
 
