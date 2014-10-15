@@ -4,7 +4,7 @@ set number
 set hidden
 set t_Co=256
 
-colorscheme bubblegum
+colorscheme darkblue
 
 execute pathogen#infect()
 
