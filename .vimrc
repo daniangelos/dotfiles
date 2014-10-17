@@ -1,10 +1,10 @@
+execute pathogen#infect()
+
 filetype plugin indent on
 syntax on
 set number
 set hidden
-set t_Co=256
-
-execute pathogen#infect()
+set t_Co=16
 
 map :Nt NERDTreeToggle<CR>
 nnoremap <C-N> :NERDTreeToggle<CR>
@@ -12,6 +12,7 @@ nnoremap <C-N> :NERDTreeToggle<CR>
 set tabstop=4
 set shiftwidth=4
 
+set background=dark
 colorscheme bubblegum
 
 nnoremap <C-S> :w<CR>
@@ -26,6 +27,8 @@ nnoremap <Leader>e :e
 
 nnoremap <Tab> :bn<cr>
 nnoremap <S-Tab> :bp<cr>
+nnoremap <Leader>w :bd<cr>
+nnoremap <Leader>q :q<cr>
 "Ctrl+s reach vim
 silent !stty -ixon > /dev/null 2> /dev/null
 
