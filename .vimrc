@@ -13,7 +13,7 @@ set tabstop=4
 set shiftwidth=4
 
 set background=dark
-colorscheme bubblegum
+colorscheme sorcerer
 
 nnoremap <C-S> :w<CR>
 
