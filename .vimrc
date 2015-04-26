@@ -6,6 +6,7 @@ syntax on
 set number
 set hidden
 set t_Co=256
+set cursorline
 
 "Fica lindo
 let g:airline_powerline_fonts=1
