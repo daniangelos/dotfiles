@@ -38,6 +38,8 @@ silent !stty -ixon > /dev/null 2> /dev/null
 
 "Syntastic no vim
 let g:syntastic_mode_map = { "mode": "active"}
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 "Mostrar a barrinha em cima
 let g:airline#extensions#tabline#fnamod = ':t'
