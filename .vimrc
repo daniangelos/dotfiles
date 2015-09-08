@@ -51,3 +51,33 @@ set laststatus=2
 "Cursor Highlight
 set cursorline
 hi CursorLine cterm=NONE ctermbg=233 ctermfg=NONE
+
+"Coq stuff
+nnoremap <Leader>coq :call ToggleCoq()<CR> 
+nnoremap <Up> :CoqUndo<CR>
+nnoremap <Down> :CoqNext<CR>
+nnoremap <Right> :CoqToCursor<CR>
+
+inoremap <Up> <Esc><C-S> :CoqUndo<CR>i
+inoremap <Down> <Esc><C-S> :CoqNext<CR>i
+
+let g:coq_ide_state = "off"
+
+function! CoqGoDot()
+    :CoqToCursor
+endfunction
+
+function! ToggleCoq()
+    if g:coq_ide_state == "off"
+        :CoqLaunch
+        inoremap . .<Esc> :call CoqGoDot()<CR>i
+        let g:coq_ide_state = "on"
+    else
+        :CoqKill
+        inoremap . .
+        let g:coq_ide_state = "off"
+    end
+endfunction
+
+"call pathogen#infect append all bundles()
+call pathogen#infect('bundle/{}')
