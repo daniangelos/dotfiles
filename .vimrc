@@ -32,6 +32,7 @@ inoremap jk <Esc>
 nnoremap <Leader>e :e 
 nnoremap <Leader>w :bd<cr>
 nnoremap <Leader>q :q<cr>
+nnoremap <Leader>qq :q!<CR>
 
 "Ctrl+s reach vim
 silent !stty -ixon > /dev/null 2> /dev/null
@@ -54,12 +55,6 @@ hi CursorLine cterm=NONE ctermbg=233 ctermfg=NONE
 
 "Coq stuff
 nnoremap <Leader>coq :call ToggleCoq()<CR> 
-nnoremap <Up> :CoqUndo<CR>
-nnoremap <Down> :CoqNext<CR>
-nnoremap <Right> :CoqToCursor<CR>
-
-inoremap <Up> <Esc><C-S> :CoqUndo<CR>i
-inoremap <Down> <Esc><C-S> :CoqNext<CR>i
 
 let g:coq_ide_state = "off"
 
@@ -70,7 +65,10 @@ endfunction
 function! ToggleCoq()
     if g:coq_ide_state == "off"
         :CoqLaunch
-        inoremap . .<Esc> :call CoqGoDot()<CR>i
+        inoremap . .<Esc> :call CoqGoDot()<CR>
+		nnoremap <Up> :CoqUndo<CR>
+		nnoremap <Down> <Down> :CoqNext<CR>
+		nnoremap <Right> :CoqToCursor<CR>
         let g:coq_ide_state = "on"
     else
         :CoqKill
