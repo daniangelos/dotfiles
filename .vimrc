@@ -7,6 +7,8 @@ set number
 set hidden
 set t_Co=256
 set cursorline
+set tw=80
+set noswapfile
 
 "Fica lindo
 let g:airline_powerline_fonts=1
@@ -16,6 +18,7 @@ map :Nt NERDTreeToggle<CR>
 nnoremap <C-N> :NERDTreeToggle<CR>
 
 "Tamanho tabulacao
+set expandtab
 set tabstop=4
 set shiftwidth=4
 
