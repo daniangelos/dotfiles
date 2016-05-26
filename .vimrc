@@ -32,6 +32,7 @@ nnoremap <Tab> :bn<CR>
 nnoremap <S-Tab> :bp<CR>
 nnoremap <C-S> :w<CR>
 inoremap jk <Esc>
+inoremap JK <Esc> :r ! python ~/dotfiles/caps.py<CR>
 nnoremap <Leader>e :e 
 nnoremap <Leader>w :bd<CR>
 nnoremap <Leader>q :q<CR>
