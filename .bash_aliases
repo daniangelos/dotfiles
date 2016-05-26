@@ -1,0 +1,18 @@
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias install='sudo apt-get -y install'
+alias loka='light-locker-command -l'
+alias pibic='cd ~/Documents/pibic/modalsat'
+alias tg='cd ~/Documents/TG/hffj/'
+alias monografia='cd ~/Documents/TG/tg-ffj/monografia'
+alias unb='cd ~/Dropbox/UnB/1o2016/'
+alias icc='cd ~/Documents/icc/'
+alias paa='cd ~/Dropbox/UnB/1o2016/PAA'
+alias icc_server='ssh -p 443 icc@iccunb.noip.me'
+alias icc_tutorial='ssh -p 13508 ishikawa@reid.unb.br'
+alias gstatus='git status'
+alias gpush='git push origin master'
+alias gadd='git add -A'
+alias gcommit='git commit -m'
+
+
