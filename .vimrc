@@ -31,14 +31,19 @@ let mapleader = "\<Space>"
 nnoremap <Tab> :bn<CR>
 nnoremap <S-Tab> :bp<CR>
 nnoremap <C-S> :w<CR>
+nnoremap <Leader>s :w<CR>
 inoremap jk <Esc>
 inoremap JK <Esc> :r ! python ~/dotfiles/caps.py<CR>
 nnoremap <Leader>e :e 
 nnoremap <Leader>w :bd<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>qq :q!<CR>
+nnoremap <Leader>qa :qa<CR>
 nnoremap <Leader>wq :wq<CR>
-nnoremap <Leader>m :r ! make<CR>
+nnoremap <Leader>h <C-W>h<C-W>_
+nnoremap <Leader>j <C-W>j<C-W>_
+nnoremap <Leader>k <C-W>k<C-W>_
+nnoremap <Leader>l <C-W>l<C-W>_
 
 "Ctrl+s reach vim
 silent !stty -ixon > /dev/null 2> /dev/null
