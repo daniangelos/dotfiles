@@ -38,6 +38,7 @@ nnoremap <Leader>w :bd<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>qq :q!<CR>
 nnoremap <Leader>wq :wq<CR>
+nnoremap <Leader>m :r ! make<CR>
 
 "Ctrl+s reach vim
 silent !stty -ixon > /dev/null 2> /dev/null
@@ -81,6 +82,9 @@ function! ToggleCoq()
         let g:coq_ide_state = "off"
     end
 endfunction
+
+"Tex stuff
+let g:tex_flavor = "latex"
 
 "call pathogen#infect append all bundles()
 call pathogen#infect('bundle/{}')
