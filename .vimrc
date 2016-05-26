@@ -28,14 +28,15 @@ colorscheme bubblegum
 
 "Atalhos do vim
 let mapleader = "\<Space>"
-nnoremap <Tab> :bn<cr>
-nnoremap <S-Tab> :bp<cr>
+nnoremap <Tab> :bn<CR>
+nnoremap <S-Tab> :bp<CR>
 nnoremap <C-S> :w<CR>
 inoremap jk <Esc>
 nnoremap <Leader>e :e 
-nnoremap <Leader>w :bd<cr>
-nnoremap <Leader>q :q<cr>
+nnoremap <Leader>w :bd<CR>
+nnoremap <Leader>q :q<CR>
 nnoremap <Leader>qq :q!<CR>
+nnoremap <Leader>wq :wq<CR>
 
 "Ctrl+s reach vim
 silent !stty -ixon > /dev/null 2> /dev/null
