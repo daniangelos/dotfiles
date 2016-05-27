@@ -2,9 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-RED="$(tput setaf 1)"
-RESET="$(tput sgr0)"
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
