@@ -93,3 +93,9 @@ let g:tex_flavor = "latex"
 
 "call pathogen#infect append all bundles()
 call pathogen#infect('bundle/{}')
+
+"navigation between splits
+nnoremap wj <C-W><C-J>
+nnoremap wk <C-W><C-K>
+nnoremap wl <C-W><C-L>
+nnoremap wh <C-W><C-H>
