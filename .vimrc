@@ -9,6 +9,7 @@ set t_Co=256
 set cursorline
 set tw=80
 set noswapfile
+set backspace=2
 
 "Fica lindo
 let g:airline_powerline_fonts=1
