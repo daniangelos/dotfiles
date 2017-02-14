@@ -9,7 +9,6 @@ set t_Co=256
 set cursorline
 set tw=80
 set noswapfile
-set backspace=2
 
 "Fica lindo
 let g:airline_powerline_fonts=1
@@ -96,7 +95,7 @@ let g:tex_flavor = "latex"
 call pathogen#infect('bundle/{}')
 
 "navigation between splits
-nnoremap wj <C-W><C-J>
-nnoremap wk <C-W><C-K>
-nnoremap wl <C-W><C-L>
-nnoremap wh <C-W><C-H>
+nnoremap <Leader>j <C-W><C-J>
+nnoremap <Leader>k <C-W><C-K>
+nnoremap <Leader>l <C-W><C-L>
+nnoremap <Leader>h <C-W><C-H>
