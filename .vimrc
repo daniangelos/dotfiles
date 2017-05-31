@@ -102,3 +102,8 @@ nnoremap <Leader>h <C-W><C-H>
 
 "move lines in vim
 nnoremap <Leader>m :m 
+
+"vue format
+augroup filetypedetect
+    au BufRead,BufNewFile *.module set filetype=php
+augroup END
