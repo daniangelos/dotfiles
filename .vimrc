@@ -105,5 +105,5 @@ nnoremap <Leader>m :m
 
 "vue format
 augroup filetypedetect
-    au BufRead,BufNewFile *.module set filetype=php
+    au BufRead,BufNewFile *.vue set filetype=html
 augroup END
