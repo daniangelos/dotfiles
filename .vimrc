@@ -95,10 +95,13 @@ let g:tex_flavor = "latex"
 call pathogen#infect('bundle/{}')
 
 "navigation between splits
+nnoremap <Leader>ht :split<CR>
+nnoremap <Leader>v :vsplit<CR>
 nnoremap <Leader>j <C-W><C-J>
 nnoremap <Leader>k <C-W><C-K>
 nnoremap <Leader>l <C-W><C-L>
 nnoremap <Leader>h <C-W><C-H>
+nnoremap <Leader>wq <C-W>q
 
 "move lines in vim
 nnoremap <Leader>m :m 
