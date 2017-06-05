@@ -23,8 +23,8 @@ set tabstop=4
 set shiftwidth=4
 
 "Tema do vim
-set background=dark
-colorscheme bubblegum
+let g:arcadia_Twilight = 1
+colorscheme arcadia
 
 "Atalhos do vim
 let mapleader = "\<Space>"
@@ -95,13 +95,14 @@ let g:tex_flavor = "latex"
 call pathogen#infect('bundle/{}')
 
 "navigation between splits
-nnoremap <Leader>ht :split<CR>
+nnoremap <Leader>t :split<CR>
 nnoremap <Leader>v :vsplit<CR>
 nnoremap <Leader>j <C-W><C-J>
 nnoremap <Leader>k <C-W><C-K>
 nnoremap <Leader>l <C-W><C-L>
 nnoremap <Leader>h <C-W><C-H>
 nnoremap <Leader>wq <C-W>q
+nnoremap <Leader>ww :BD<CR>
 
 "move lines in vim
 nnoremap <Leader>m :m 
