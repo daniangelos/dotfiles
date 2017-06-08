@@ -111,3 +111,30 @@ nnoremap <Leader>m :m
 augroup filetypedetect
     au BufRead,BufNewFile *.vue set filetype=html
 augroup END
+
+"Startify
+let g:startify_session_autoload = 1
+let g:startify_session_persistence = 1
+let g:startify_change_to_dir = 0
+let g:startify_list_order = [
+            \ ['===> Sessions'],  'sessions', 
+            \ ['===> Bookmarks'], 'bookmarks',
+            \ ['===> Recent Files'], 'files', 
+            \ ['===> Directory'], 'dir' ]
+let g:startify_bookmarks = [ '~/.nvimrc',  '~/.zshrc', '~/.agenda.org', '~/code/', '~/Documents/Notes' ]
+
+let g:startify_custom_header = [
+            \' _______________________________________',
+            \'/ O Thiago é o namorado mais gostoso do \', 
+            \'\ mundo!                                /',
+            \' ---------------------------------------',
+            \'        \   ^__^',
+            \'         \  (oo)\_______',
+            \'            (__)\       )\/\',
+            \'                ||----w |',
+            \'                ||     ||',
+            \'',
+            \]
+
+let g:startify_session_savevars = ['g:startify_session_savecmds']
+
