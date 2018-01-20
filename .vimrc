@@ -138,3 +138,4 @@ let g:startify_custom_header = [
 
 let g:startify_session_savevars = ['g:startify_session_savecmds']
 
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
