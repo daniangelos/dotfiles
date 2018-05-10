@@ -1,3 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/dani/Dropbox/UnB/2o2014/PP/e01/110010434_ep01'

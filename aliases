@@ -1,0 +1,8 @@
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias install='sudo apt-get -y install'
+alias remove='sudo apt-get -y remove'
+alias autoremove='sudo apt-get autoremove -y'
+alias unb='cd ~/Dropbox/UnB/'
+alias laforce='ssh -p 13508 daniangelos@164.41.75.226'
+alias mae='make'

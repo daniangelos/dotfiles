@@ -1,7 +1,0 @@
-alias update='sudo apt-get update'
-alias upgrade='sudo apt-get upgrade'
-alias install='sudo apt-get -y install'
-alias unb='cd ~/Dropbox/UnB/'
-alias net='sudo service network-manager restart'
-alias open='atril'
-alias laforce='ssh -p 13508 daniangelos@164.41.75.226'
