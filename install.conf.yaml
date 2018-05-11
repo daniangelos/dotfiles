@@ -5,7 +5,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim/
     ~/.vimrc: vimrc
-    ~/.oh-my-zsh/themes/suvash.zsh-theme: oh-my-zsh/themes/suvash.zsh-theme
+    ~/.oh-my-zsh/themes/suvash.zsh-theme: ztheme
     ~/.zshrc: zshrc
     ~/.aliases: aliases
     ~/.zprofile: profile
