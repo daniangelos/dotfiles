@@ -1,7 +1,7 @@
 function prompt_char {
     git branch >/dev/null 2>/dev/null && echo '±' && return
     hg root >/dev/null 2>/dev/null && echo 'Hg' && return
-    echo '○'
+    echo '$'
 }
 
 function virtualenv_info {
@@ -21,7 +21,7 @@ function ruby_prompt {
     return 0
 }
 
-PROMPT='%n@%F{cyan}%m%f: %B%F{blue}%1~%b$(git_prompt_info)$(ruby_prompt) $(virtualenv_info) $(prompt_char) '
+PROMPT='%n@%F{cyan}%m%f: %B%F{blue}%1~%f%b$(git_prompt_info)$(ruby_prompt) $(virtualenv_info) $(prompt_char) '
 
 ZSH_THEME_GIT_PROMPT_PREFIX=' on %F{red}'
 ZSH_THEME_GIT_PROMPT_SUFFIX='%f'
