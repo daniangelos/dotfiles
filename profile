@@ -17,3 +17,6 @@ export TOOLS="$HOME/Tools"
 export POSTMAN="$TOOLS/Postman/"
 export PATH="$PATH:$POSTMAN"
 
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
+
+export PATH="$PATH:/usr/sbin/"
