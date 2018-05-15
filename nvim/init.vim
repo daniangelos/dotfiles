@@ -55,6 +55,9 @@ nnoremap <Leader>h <C-W><C-H>
 nnoremap <Leader>y "+y
 nnoremap <Leader>p "+p
 
+" Shortcut for make
+nnoremap <Leader>m :make<CR>
+
 "Cursor Highlight
 set cursorline
 hi CursorLine cterm=NONE ctermbg=233 ctermfg=NONE
