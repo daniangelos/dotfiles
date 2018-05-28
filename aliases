@@ -1,5 +1,5 @@
-alias update='sudo apt-get update'
-alias upgrade='sudo apt-get upgrade'
+alias update='sudo apt-get update -y'
+alias upgrade='sudo apt-get upgrade -y'
 alias install='sudo apt-get -y install'
 alias remove='sudo apt-get -y remove'
 alias autoremove='sudo apt-get autoremove -y'

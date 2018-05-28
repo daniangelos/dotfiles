@@ -22,3 +22,6 @@
 [submodule "nvim/plugged/nerdtree"]
 	path = nvim/plugged/nerdtree
 	url = https://github.com/scrooloose/nerdtree
+[submodule "nvim/plugged/vim-airline"]
+	path = nvim/plugged/vim-airline
+	url = https://github.com/vim-airline/vim-airline
