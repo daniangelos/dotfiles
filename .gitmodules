@@ -19,3 +19,6 @@
 [submodule "nvim/plugged/falcon"]
 	path = nvim/plugged/falcon
 	url = https://github.com/fenetikm/falcon.git
+[submodule "nvim/plugged/nerdtree"]
+	path = nvim/plugged/nerdtree
+	url = https://github.com/scrooloose/nerdtree

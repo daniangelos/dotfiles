@@ -6,10 +6,12 @@ call plug#begin('~/.config/nvim/plugged')
 "Plugins
 Plug 'fenetikm/falcon'
 Plug 'itchyny/lightline.vim'
-Plug 'edkolev/tmuxline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
 Plug 'junegunn/vim-slash'
+Plug 'vim-syntastic/syntastic'
+Plug 'SirVer/ultisnips'
 
 " Initialize plugin system
 call plug#end()
@@ -51,7 +53,7 @@ nnoremap <Leader>k <C-W><C-K>
 nnoremap <Leader>l <C-W><C-L>
 nnoremap <Leader>h <C-W><C-H>
 
-" Shortcuts for copy and paste
+"Shortcuts for copy and paste
 nnoremap <Leader>y "+y
 nnoremap <Leader>p "+p
 
@@ -89,3 +91,27 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript.jsx setlocal ts=2 sts=2 sw=2
 autocmd Filetype typescript setlocal ts=2 sts=2 sw=2
 
+"replace while types
+set inccommand=nosplit
+
+"NERDTREE
+map :Ntree NERDTreeToggle<CR>
+nnoremap <C-N> :NERDTreeToggle<CR>
+
+"syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
