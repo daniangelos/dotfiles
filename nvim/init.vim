@@ -12,6 +12,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/vim-slash'
 Plug 'vim-syntastic/syntastic'
 Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " Initialize plugin system
 call plug#end()
