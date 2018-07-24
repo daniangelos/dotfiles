@@ -12,6 +12,14 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/vim-slash'
 Plug 'vim-syntastic/syntastic'
 Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" For async completion
+Plug 'Shougo/deoplete.nvim'
+" For Denite features
+Plug 'Shougo/denite.nvim'
+
 
 " Initialize plugin system
 call plug#end()
@@ -25,6 +33,9 @@ set cursorline
 set tw=80
 set noswapfile
 set background=dark
+
+" Enable deoplete at startup
+let g:deoplete#enable_at_startup = 1
 
 "Tamanho tabulacao
 set expandtab
@@ -93,6 +104,7 @@ set runtimepath^=~/.config/nvim/bundle/ctrlp.vim
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript.jsx setlocal ts=2 sts=2 sw=2
 autocmd Filetype typescript setlocal ts=2 sts=2 sw=2
+autocmd BufNewFile,BufRead *ts set syntax=typescript
 
 "replace while types
 set inccommand=nosplit
@@ -112,9 +124,11 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+set guicursor=
