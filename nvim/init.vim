@@ -20,7 +20,6 @@ Plug 'Shougo/deoplete.nvim'
 " For Denite features
 Plug 'Shougo/denite.nvim'
 
-
 " Initialize plugin system
 call plug#end()
 
