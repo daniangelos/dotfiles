@@ -7,6 +7,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'fenetikm/falcon'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/vim-slash'
@@ -14,7 +15,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'othree/yajs.vim'
 " For async completion
 Plug 'Shougo/deoplete.nvim'
 " For Denite features
@@ -103,7 +104,7 @@ set runtimepath^=~/.config/nvim/bundle/ctrlp.vim
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript.jsx setlocal ts=2 sts=2 sw=2
 autocmd Filetype typescript setlocal ts=2 sts=2 sw=2
-autocmd BufNewFile,BufRead *ts set syntax=typescript
+"autocmd BufNewFile,BufRead *ts set syntax=typescript
 
 "replace while types
 set inccommand=nosplit
